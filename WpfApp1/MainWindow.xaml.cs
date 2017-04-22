@@ -25,10 +25,21 @@ namespace WpfApp1
             InitializeComponent();
 
         }
+        private int amountMatches;
+
+        public int AmountMatches
+        {
+            get { return amountMatches; }
+            set { amountMatches = value; }
+        }
+
 
         public void Button_Click(object sender, RoutedEventArgs e)
         {
             textblock1.Text = "";
+
+            AmountMatches = 21;
+
 
             Button match1 = new Button();
             match1.Content = "I";
@@ -72,21 +83,47 @@ namespace WpfApp1
             match2.Click += Match2_Click;
             match3.Click += Match3_Click;
 
+            textblock1.Text = amountMatches.ToString();
+
         }
 
         private void Match3_Click(object sender, RoutedEventArgs e)
-        {
-            textblock1.Text = "34";
+        {   
+            if(AmountMatches>=3)
+            {
+                amountMatches -= 3;
+                textblock1.Text = amountMatches.ToString();
+            }
+            if (AmountMatches <= 0)
+            {
+                textblock1.Text = "Du hast verloren";
+            }
         }
 
         private void Match2_Click(object sender, RoutedEventArgs e)
         {
-            textblock1.Text = "3";
+            if(AmountMatches>=2)
+            {
+                amountMatches -= 2;
+                textblock1.Text = amountMatches.ToString();
+            }
+            if (AmountMatches <= 0)
+            {
+                textblock1.Text = "Du hast verloren";
+            }
         }
 
         private void Match1_Click(object sender, RoutedEventArgs e)
         {
-            textblock1.Text = "w";
+            if(AmountMatches>=1)
+            {
+                amountMatches -= 1;
+                textblock1.Text = amountMatches.ToString();
+            }
+            if (AmountMatches <= 0)
+            {
+                textblock1.Text = "Du hast verloren";
+            } 
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
