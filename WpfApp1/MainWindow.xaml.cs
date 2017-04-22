@@ -68,11 +68,25 @@ namespace WpfApp1
             Human player2 = new Human("Spieler2");
             Game game = new Game(2);
 
+            match1.Click += Match1_Click;
+            match2.Click += Match2_Click;
+            match3.Click += Match3_Click;
 
+        }
 
+        private void Match3_Click(object sender, RoutedEventArgs e)
+        {
+            textblock1.Text = "34";
+        }
 
+        private void Match2_Click(object sender, RoutedEventArgs e)
+        {
+            textblock1.Text = "3";
+        }
 
-
+        private void Match1_Click(object sender, RoutedEventArgs e)
+        {
+            textblock1.Text = "w";
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
