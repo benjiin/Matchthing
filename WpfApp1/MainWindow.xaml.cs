@@ -26,11 +26,53 @@ namespace WpfApp1
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
+            textblock1.Text = "";
+
+            Button match1 = new Button();
+            match1.Content = "I";
+            match1.Height = button1.Height;
+            match1.Width = button1.Width;
+            match1.HorizontalAlignment = button1.HorizontalAlignment;
+            match1.VerticalAlignment = button1.VerticalAlignment;
+            match1.Margin = button1.Margin;
+
+            Button match2 = new Button();
+            match2.Content = "II";
+            match2.Height = button3.Height;
+            match2.Width = button3.Width;
+            match2.HorizontalAlignment = button3.HorizontalAlignment;
+            match2.VerticalAlignment = button3.VerticalAlignment;
+            match2.Margin = button3.Margin;
+
+            Button match3 = new Button();
+            match3.Content = "III";
+            match3.Height = button5.Height;
+            match3.Width = button5.Width;
+            match3.HorizontalAlignment = button5.HorizontalAlignment;
+            match3.VerticalAlignment = button5.VerticalAlignment;
+            match3.Margin = button5.Margin;
+
+
+            grid1.Children.Add(match1);
+            grid1.Children.Add(match2);
+            grid1.Children.Add(match3);
+
+            grid1.Children.Remove(button1);
+            grid1.Children.Remove(button2);
+            grid1.Children.Remove(button4);
+
+
             Human player1 = new Human("Spieler1");
             Human player2 = new Human("Spieler2");
-            textblock1.Text = "";
+            Game game = new Game(2);
+
+            
+
+            
+          
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
+    <Grid Name="grid1">
         <Button x:Name="button1" Content="2 Spieler" HorizontalAlignment="Left" Margin="60,260,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click"/>
         <Button x:Name="button2" Content="3 Spieler" HorizontalAlignment="Left" Margin="140,260,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_1"/>
         <Button x:Name="button3" Content="4 Spieler" HorizontalAlignment="Left" Margin="220,260,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_2"/>
