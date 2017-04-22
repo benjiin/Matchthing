@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfApp1
 {
-    class Game
+    class Game : MainWindow
     {
         private int player;
 
@@ -18,7 +18,7 @@ namespace WpfApp1
         public Game(int player)
         {
             this.player = player;
-            
+
         }
 
     }

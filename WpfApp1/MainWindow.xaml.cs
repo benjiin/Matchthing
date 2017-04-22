@@ -68,10 +68,10 @@ namespace WpfApp1
             Human player2 = new Human("Spieler2");
             Game game = new Game(2);
 
-            
 
-            
-          
+
+
+
 
         }
 

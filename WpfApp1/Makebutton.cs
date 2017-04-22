@@ -17,10 +17,6 @@ namespace WpfApp1
 {
     class Makebutton : MainWindow
     {
-        public Makebutton()
-        {
 
-
-        }
     }
 }
